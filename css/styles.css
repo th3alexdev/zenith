@@ -12,7 +12,6 @@ body {
   width: 100%;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
-  scroll-behavior: smooth;
 }
 
 :root {
@@ -49,10 +48,10 @@ body {
   position: relative;
   width: 100%;
   height: 50vmax;
-  padding-top: 35%;
-  margin-bottom: 200px;
+  padding-top: 15vmax;
+  margin-bottom: 180px;
   color: #fff;
-  background-color: #3b363c;
+  background-color: #3c3636;
 }
 
 .creative-and-quality::before {
@@ -131,7 +130,7 @@ body {
   display: flex;
   width: 100%;
   height: 120px;
-  margin-top: calc(29%);
+  margin-top: calc(14vmax + 1.5%);
   color: #333;
   font-size: 2.5rem;
   font-weight: 500;
@@ -160,7 +159,7 @@ body {
     opacity: 0;
   }
   25% {
-    content: "BRANDING";
+    content: "B R A N D I N G";
     opacity: 1;
   }
   30% {
@@ -170,7 +169,7 @@ body {
     opacity: 0;
   }
   50% {
-    content: "MARKETING";
+    content: "M A R K E T I N G";
     opacity: 1;
   }
   55% {
@@ -180,7 +179,7 @@ body {
     opacity: 0;
   }
   75% {
-    content: "DEVELOPMENT";
+    content: "D E V E L O P M E N T";
     opacity: 1;
   }
   80% {
@@ -190,7 +189,7 @@ body {
     opacity: 0;
   }
   90% {
-    content: "CONSULTING";
+    content: "C O N S U L T I N G";
     opacity: 1;
   }
   95% {
@@ -286,11 +285,32 @@ body {
 .left {
   color: #fff;
   background-color: #333;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+}
+
+.left:hover {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #333;
 }
 
 .right {
   color: #333;
   border: 1px solid #333;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+}
+
+.right:hover {
+  color: #fff;
+  background-color: #333;
 }
 
 .we-can-make p {
@@ -441,8 +461,21 @@ body {
 .field-submit {
   height: 45px;
   color: #fff;
+  font-weight: 600;
   background-color: #333;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
   outline: none;
+}
+
+.field-submit:hover {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #333;
+  cursor: pointer;
 }
 
 /* ? =============================== ? */
@@ -493,4 +526,117 @@ body {
 .footer-link--icon:link {
   font-weight: 500;
   color: #7a848d;
+}
+
+/* ! ===================== ! */
+/* ! media querie : TABLET ! */
+/* ! ===================== ! */
+
+@media (min-width: 426px) and (max-width: 768px) {
+  /* ¡ ========= BASIC ========= ! */
+
+  .title {
+    font-size: 2.3rem;
+  }
+
+  /* ¡ ========================= ! */
+
+  /* ? WE DELIVER CREATIVE AND QUALITY ? */
+
+  .creative-and-quality {
+    margin-bottom: 110px;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?            FEATURES             ? */
+
+  .chrts {
+    padding: 85px 50px 0 50px;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?             IDEAS               ? */
+
+  .ideas {
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  .ideas-subtitle {
+    margin-bottom: 25px;
+  }
+
+  .ideas-links {
+    margin: 25px 0 0 15px;
+    justify-content: left;
+  }
+
+  .btn-link {
+    max-width: 120px;
+  }
+
+  .we-can-make p {
+    margin-bottom: 20px;
+  }
+
+  .ideas-list {
+    width: 92%;
+    margin: 0 auto 0 auto;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?        CONTACT DETAILS          ? */
+
+  .contact {
+    height: 770px;
+    padding: 28vmin 5vmin;
+  }
+
+  .contact-subtitle {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .contact-text {
+    margin-bottom: 55px;
+    color: #fff;
+  }
+
+  .contact-list li {
+    font-size: 1.1rem;
+  }
+
+  .icon-div {
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .contact-icon {
+    color: #eaeaea;
+    font-size: 1.9rem;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?          CONTACT FORMS          ? */
+
+  .contact--form {
+    height: 660px;
+    padding: 140px 25px 0 25px;
+  }
+
+  .contact--form::after {
+    background-position: -500px -400px;
+  }
+
+  .field-submit {
+    height: 50px;
+    color: #fff;
+    background-color: #333;
+  }
+
+  /* ? =============================== ? */
 }
