@@ -49,7 +49,7 @@ body {
   width: 100%;
   height: 50vmax;
   padding-top: 15vmax;
-  margin-bottom: 180px;
+  margin-bottom: 15%;
   color: #fff;
   background-color: #3c3636;
 }
@@ -211,8 +211,8 @@ body {
   z-index: 5;
   display: grid;
   width: 100%;
-  height: 1100px;
-  padding: 15px 10px 0 10px;
+  height: 1300px;
+  padding: 100px 10px 0 10px;
   margin: 0 auto 100px auto;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
@@ -230,7 +230,7 @@ body {
   height: 100%;
   background-image: url("../assets/images/services-background.jpg");
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   opacity: 0.5;
 }
 
@@ -548,7 +548,7 @@ body {
   /* ? WE DELIVER CREATIVE AND QUALITY ? */
 
   .creative-and-quality {
-    margin-bottom: -5px;
+    margin-bottom: -25px;
   }
 
   .single-text {
@@ -560,8 +560,9 @@ body {
   /* ?            FEATURES             ? */
 
   .chrts {
-    height: 1150px;
-    padding: 95px 50px 0 50px;
+    height: 1400px;
+    padding: 210px 50px 0 50px;
+    gap: 10px;
   }
 
   /* ? =============================== ? */
@@ -592,7 +593,6 @@ body {
 
   .ideas-list {
     width: 92%;
-    margin: 0 auto 0 auto;
   }
 
   /* ? =============================== ? */
@@ -661,21 +661,6 @@ body {
     font-size: 2.5rem;
   }
 
-  .subtitle {
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: var(--body-title);
-  }
-
-  .text {
-    color: var(--body-text);
-    line-height: 25px;
-  }
-
-  .icon {
-    font-size: 1.5rem;
-  }
-
   /* ¡ ========================= ! */
 
   /* ? WE DELIVER CREATIVE AND QUALITY ? */
@@ -684,12 +669,6 @@ body {
     margin-bottom: 20px;
     color: #fff;
     background-color: #3c3636;
-  }
-
-  .title-container {
-    position: relative;
-    width: 98%;
-    margin: 0 auto;
   }
 
   .title-container::after {
@@ -733,12 +712,11 @@ body {
     height: 1000px;
     padding: 80px 20px 0 50px;
     margin: 0 auto 80px auto;
-    outline: 2px solid rgba(0, 0, 0, 0.2);
     background-image: url("../assets/images/details-1.jpg"),
       url("../assets/images/details-2.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: 350px, 350px;
-    background-position: 68vw 20px, -8vmax 550px;
+    background-position: 68vw 20px, -8vmax calc(83vh - 10vmax);
   }
 
   .ideas-subtitle {
@@ -749,22 +727,16 @@ body {
 
   .we-have-ideas {
     width: 75%;
-    margin-bottom: 240px;
+    margin-bottom: calc(18vmin + 10%);
   }
 
   .ideas-links {
-    display: flex;
     max-width: 280px;
   }
 
   .we-can-make {
     width: 75%;
     margin: 0 0 20px 16.5vmax;
-    outline: 2px solid rgba(0, 0, 0, 0.2);
-  }
-
-  .we-can-make p {
-    margin-bottom: 20px;
   }
 
   .ideas-list {
@@ -1012,23 +984,8 @@ body {
 @media (min-width: 1291px) and (max-width: 1440px) {
   /* ¡ ========= BASIC ========= ! */
 
-  .title {
-    font-size: 2rem;
-  }
-
   .subtitle {
     font-size: 2.3rem;
-    text-transform: uppercase;
-    color: var(--body-title);
-  }
-
-  .text {
-    color: var(--body-text);
-    line-height: 25px;
-  }
-
-  .icon {
-    font-size: 1.5rem;
   }
 
   /* ¡ ========================= ! */
@@ -1060,7 +1017,6 @@ body {
 
   .principal-title {
     width: 75%;
-    font-weight: 600;
     font-size: 2.3rem;
     line-height: 45px;
   }
@@ -1150,7 +1106,6 @@ body {
   }
 
   .ideas-links {
-    display: flex;
     max-width: 280px;
   }
 
@@ -1189,7 +1144,6 @@ body {
   }
 
   .contact-list li {
-    list-style: none;
     font-size: 1.1rem;
   }
 
@@ -1211,7 +1165,6 @@ body {
     width: 58%;
     height: 760px;
     padding: 190px 140px 0 140px;
-    margin: 0 auto;
   }
 
   .contact--form::after {
@@ -1221,30 +1174,15 @@ body {
   /* ? =============================== ? */
 }
 
-/* ! ====================== ! */
-/* ! media querie :  PC 2   ! */
-/* ! ====================== ! */
+/* ! =========================== ! */
+/* ! media querie :  ULTRA WIDE  ! */
+/* ! =========================== ! */
 
-@media (min-width: 1441px) and (max-width: 2560px) {
+@media (min-width: 1441px) and (max-width: 3000px) {
   /* ¡ ========= BASIC ========= ! */
-
-  .title {
-    font-size: 2rem;
-  }
 
   .subtitle {
     font-size: 2.3rem;
-    text-transform: uppercase;
-    color: var(--body-title);
-  }
-
-  .text {
-    color: var(--body-text);
-    line-height: 25px;
-  }
-
-  .icon {
-    font-size: 1.5rem;
   }
 
   /* ¡ ========================= ! */
@@ -1252,7 +1190,6 @@ body {
   /* ? WE DELIVER CREATIVE AND QUALITY ? */
 
   .creative-and-quality {
-    width: 100%;
     height: 100vh;
     padding-top: 0;
     margin-bottom: 0;
@@ -1304,12 +1241,19 @@ body {
   /* ?            FEATURES             ? */
 
   .chrts {
+    width: 100%;
     height: 650px;
     padding: 175px 10px 0 10px;
     grid-template-columns: repeat(2, minmax(300px, 450px));
     grid-template-rows: repeat(2, 110px);
     justify-content: center;
     gap: 85px;
+  }
+
+  .chrts::after {
+    background-image: url("../assets/images/services-background.jpg");
+    background-position: center;
+    background-size: 100%;
   }
 
   .chrts-div {
@@ -1323,8 +1267,6 @@ body {
   }
 
   .chrts-subtitle {
-    margin-bottom: 10px;
-    font-weight: 500;
     grid-area: title;
   }
 
@@ -1392,7 +1334,7 @@ body {
   .contact {
     width: 42%;
     height: 760px;
-    padding: 16vmin 5vmin;
+    padding: 19vh 5vmin;
     color: #fff;
     background-color: #3b363c;
   }
