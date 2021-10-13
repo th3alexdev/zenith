@@ -405,7 +405,7 @@ body {
   width: 100%;
   height: 100%;
   background-image: url("../assets/images/contact-right-background.jpg");
-  background-position: -750px -400px;
+  background-position: calc(50% - 3%) -400px;
   background-repeat: repeat;
   opacity: 0.1;
   mix-blend-mode: color-burn;
@@ -548,7 +548,7 @@ body {
   /* ? WE DELIVER CREATIVE AND QUALITY ? */
 
   .creative-and-quality {
-    margin-bottom: 42px;
+    margin-bottom: -5px;
   }
 
   .single-text {
@@ -601,7 +601,7 @@ body {
 
   .contact {
     height: 770px;
-    padding: 23vh 5vmin;
+    padding: 18vh 5vmin;
   }
 
   .contact-subtitle {
@@ -638,7 +638,7 @@ body {
   }
 
   .contact--form::after {
-    background-position: -500px -400px;
+    background-position: calc(50% - 3%) -400px;
   }
 
   .field-submit {
@@ -729,8 +729,16 @@ body {
   /* ?             IDEAS               ? */
 
   .ideas {
-    width: 93%;
-    margin: 0 auto 100px auto;
+    width: 100%;
+    height: 1000px;
+    padding: 80px 20px 0 50px;
+    margin: 0 auto 80px auto;
+    outline: 2px solid rgba(0, 0, 0, 0.2);
+    background-image: url("../assets/images/details-1.jpg"),
+      url("../assets/images/details-2.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 350px, 350px;
+    background-position: 68vw 20px, -8vmax 550px;
   }
 
   .ideas-subtitle {
@@ -741,7 +749,7 @@ body {
 
   .we-have-ideas {
     width: 75%;
-    margin-bottom: 180px;
+    margin-bottom: 240px;
   }
 
   .ideas-links {
@@ -751,7 +759,8 @@ body {
 
   .we-can-make {
     width: 75%;
-    margin: 0 0 20px 21.5vmax;
+    margin: 0 0 20px 16.5vmax;
+    outline: 2px solid rgba(0, 0, 0, 0.2);
   }
 
   .we-can-make p {
@@ -806,7 +815,7 @@ body {
   }
 
   .contact--form::after {
-    background-position: -400px -400px;
+    background-position: calc(50% - 3%) -400px;
   }
 
   .field-submit {
@@ -822,7 +831,7 @@ body {
 /* ! media querie : LAPTOP 2 ! */
 /* ! ======================= ! */
 
-@media (min-width: 1025px) and (max-width: 1920px) {
+@media (min-width: 1025px) and (max-width: 1290px) {
   /* ¡ ========= BASIC ========= ! */
 
   .title {
@@ -900,8 +909,15 @@ body {
   /* ?             IDEAS               ? */
 
   .ideas {
-    width: 93%;
+    width: 100%;
+    height: 1050px;
     margin: 0 auto 100px auto;
+    padding: 150px 70px 0 70px;
+    background-image: url("../assets/images/details-1.jpg"),
+      url("../assets/images/details-2.jpg");
+    background-size: 420px, 420px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 64vw top, -3% 550px;
   }
 
   .ideas-subtitle {
@@ -911,8 +927,8 @@ body {
   }
 
   .we-have-ideas {
-    width: 70%;
-    margin-bottom: 180px;
+    width: 75%;
+    margin-bottom: 210px;
   }
 
   .ideas-links {
@@ -921,8 +937,8 @@ body {
   }
 
   .we-can-make {
-    width: 70%;
-    margin: 0 0 20px 28vmax;
+    width: 75%;
+    margin: 0 0 20px 25vmax;
   }
 
   .we-can-make p {
@@ -940,7 +956,7 @@ body {
 
   .contact {
     height: 700px;
-    padding: 16vh 5vmin;
+    padding: 12vh 5vmin;
     color: #fff;
     background-color: #3b363c;
   }
@@ -977,7 +993,7 @@ body {
   }
 
   .contact--form::after {
-    background-position: -400px -400px;
+    background-position: calc(50% - 5%) -400px;
   }
 
   .field-submit {
@@ -1112,9 +1128,15 @@ body {
   /* ?             IDEAS               ? */
 
   .ideas {
-    width: 60%;
+    width: 100%;
+    height: 1050px;
+    padding: 150px 80px 0 80px;
     margin: 0 auto 100px auto;
-    outline: 2px solid rgba(255, 0, 0, 0.2);
+    background-image: url("../assets/images/details-1.jpg"),
+      url("../assets/images/details-2.jpg");
+    background-size: 420px, 420px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 70vmax 20px, 1vmax 550px;
   }
 
   .ideas-subtitle {
@@ -1124,7 +1146,7 @@ body {
 
   .we-have-ideas {
     width: 75%;
-    outline: 2px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 230px;
   }
 
   .ideas-links {
@@ -1134,8 +1156,7 @@ body {
 
   .we-can-make {
     width: 75%;
-    margin-left: 15vmax;
-    outline: 2px solid rgba(0, 0, 0, 0.2);
+    margin-left: 25vmax;
   }
 
   .ideas-list {
@@ -1194,7 +1215,224 @@ body {
   }
 
   .contact--form::after {
-    background-position: -500px -350px;
+    background-position: calc(50% - 3%) -350px;
+  }
+
+  /* ? =============================== ? */
+}
+
+/* ! ====================== ! */
+/* ! media querie :  PC 2   ! */
+/* ! ====================== ! */
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  /* ¡ ========= BASIC ========= ! */
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: var(--body-title);
+  }
+
+  .text {
+    color: var(--body-text);
+    line-height: 25px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  /* ¡ ========================= ! */
+
+  /* ? WE DELIVER CREATIVE AND QUALITY ? */
+
+  .creative-and-quality {
+    width: 100%;
+    height: 100vh;
+    padding-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+    background-color: #3c3636;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .creative-and-quality::before {
+    width: 50%;
+    height: 100%;
+  }
+
+  .title-container {
+    width: 42%;
+    margin: 0 0;
+    padding-top: 41vh;
+  }
+
+  .principal-title {
+    width: 75%;
+    font-weight: 600;
+    font-size: 2.3rem;
+    line-height: 45px;
+  }
+
+  .title-container::after {
+    top: 250px;
+    left: 5%;
+  }
+
+  .title-container::before {
+    right: 5%;
+    bottom: 250px;
+  }
+
+  .single-text {
+    width: 58%;
+    height: 100vh;
+    margin-top: 0;
+    color: #333;
+    font-size: 4rem;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?            FEATURES             ? */
+
+  .chrts {
+    height: 650px;
+    padding: 175px 10px 0 10px;
+    grid-template-columns: repeat(2, minmax(300px, 450px));
+    grid-template-rows: repeat(2, 110px);
+    justify-content: center;
+    gap: 85px;
+  }
+
+  .chrts-div {
+    display: grid;
+    grid-template-columns: 90px auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "image title"
+      "image desc";
+    gap: 0 15px;
+  }
+
+  .chrts-subtitle {
+    margin-bottom: 10px;
+    font-weight: 500;
+    grid-area: title;
+  }
+
+  .image-icon {
+    width: 75px;
+    margin-bottom: 5px;
+    grid-area: image;
+    justify-self: center;
+  }
+
+  .chrts-text {
+    grid-area: desc;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?             IDEAS               ? */
+
+  .ideas {
+    width: 100%;
+    max-width: 1500px;
+    height: 1200px;
+    margin: 0 auto 100px auto;
+    padding: 180px 100px 0 100px;
+    background-image: url("../assets/images/details-1.jpg"),
+      url("../assets/images/details-2.jpg");
+    background-size: 470px, 470px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 100% top, 0 bottom;
+  }
+
+  .ideas-subtitle {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+
+  .we-have-ideas {
+    width: 75%;
+    margin-bottom: 350px;
+  }
+
+  .ideas-links {
+    display: flex;
+    max-width: 280px;
+  }
+
+  .we-can-make {
+    width: 75%;
+    margin-left: 26%;
+  }
+
+  .ideas-list {
+    width: 95%;
+    margin-left: 25px;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?        CONTACT DETAILS          ? */
+
+  .contact-div {
+    display: flex;
+  }
+
+  .contact {
+    width: 42%;
+    height: 760px;
+    padding: 23vmin 5vmin;
+    color: #fff;
+    background-color: #3b363c;
+  }
+
+  .contact-subtitle {
+    color: #fff;
+  }
+
+  .contact-text {
+    color: #fff;
+  }
+
+  .contact-list li {
+    list-style: none;
+    font-size: 1.1rem;
+  }
+
+  .icon-div {
+    grid-template-columns: 80px 1fr;
+    margin-left: 15px;
+  }
+
+  .contact-icon {
+    color: #eaeaea;
+    font-size: 1.5rem;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?          CONTACT FORMS          ? */
+
+  .contact--form {
+    width: 58%;
+    height: 760px;
+    padding: 190px 140px 0 140px;
+    margin: 0 auto;
+  }
+
+  .contact--form::after {
+    background-position: calc(50% - 5%) -350px;
   }
 
   /* ? =============================== ? */
