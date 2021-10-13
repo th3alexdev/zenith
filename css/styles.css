@@ -127,12 +127,14 @@ body {
 }
 
 .single-text {
+  position: relative;
+  z-index: 10;
   display: flex;
   width: 100%;
   height: 120px;
   margin-top: calc(14vmax + 1.5%);
   color: #333;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
   background: url("../assets/images/header-right-background.jpg");
   background-size: cover;
@@ -283,6 +285,7 @@ body {
 }
 
 .left {
+  margin-right: 7px;
   color: #fff;
   background-color: #333;
   transition: background-color 0.3s;
@@ -299,6 +302,7 @@ body {
 }
 
 .right {
+  margin-left: 7px;
   color: #333;
   border: 1px solid #333;
   transition: background-color 0.3s;
@@ -544,7 +548,11 @@ body {
   /* ? WE DELIVER CREATIVE AND QUALITY ? */
 
   .creative-and-quality {
-    margin-bottom: 110px;
+    margin-bottom: 42px;
+  }
+
+  .single-text {
+    font-size: 2.5rem;
   }
 
   /* ? =============================== ? */
@@ -552,7 +560,8 @@ body {
   /* ?            FEATURES             ? */
 
   .chrts {
-    padding: 85px 50px 0 50px;
+    height: 1150px;
+    padding: 95px 50px 0 50px;
   }
 
   /* ? =============================== ? */
@@ -592,7 +601,7 @@ body {
 
   .contact {
     height: 770px;
-    padding: 28vmin 5vmin;
+    padding: 23vh 5vmin;
   }
 
   .contact-subtitle {
@@ -636,6 +645,556 @@ body {
     height: 50px;
     color: #fff;
     background-color: #333;
+  }
+
+  /* ? =============================== ? */
+}
+
+/* ! ===================== ! */
+/* ! media querie : LAPTOP ! */
+/* ! ===================== ! */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* ¡ ========= BASIC ========= ! */
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--body-title);
+  }
+
+  .text {
+    color: var(--body-text);
+    line-height: 25px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  /* ¡ ========================= ! */
+
+  /* ? WE DELIVER CREATIVE AND QUALITY ? */
+
+  .creative-and-quality {
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: #3c3636;
+  }
+
+  .title-container {
+    position: relative;
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .title-container::after {
+    top: -100px;
+  }
+
+  .title-container::before {
+    bottom: -100px;
+  }
+
+  .single-text {
+    height: 140px;
+    color: #333;
+    font-size: 2.8rem;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?            FEATURES             ? */
+
+  .chrts {
+    height: 800px;
+    padding: 170px 10px 0 10px;
+    grid-template-columns: repeat(2, minmax(300px, 450px));
+    grid-template-rows: repeat(2, 250px);
+    justify-content: center;
+    grid-gap: 15px;
+  }
+
+  .chrts-subtitle {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?             IDEAS               ? */
+
+  .ideas {
+    width: 93%;
+    margin: 0 auto 100px auto;
+  }
+
+  .ideas-subtitle {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .we-have-ideas {
+    width: 75%;
+    margin-bottom: 180px;
+  }
+
+  .ideas-links {
+    display: flex;
+    max-width: 280px;
+  }
+
+  .we-can-make {
+    width: 75%;
+    margin: 0 0 20px 21.5vmax;
+  }
+
+  .we-can-make p {
+    margin-bottom: 20px;
+  }
+
+  .ideas-list {
+    width: 95%;
+    margin-left: 20px;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?        CONTACT DETAILS          ? */
+
+  .contact {
+    height: 700px;
+    padding: 16vh 5vmin;
+    color: #fff;
+    background-color: #3b363c;
+  }
+
+  .contact-subtitle {
+    color: #fff;
+  }
+
+  .contact-text {
+    color: #fff;
+  }
+
+  .contact-list li {
+    font-size: 1.2rem;
+  }
+
+  .icon-div {
+    margin-left: 15px;
+    grid-template-columns: 90px 1fr;
+    gap: 20px;
+  }
+
+  .contact-icon {
+    color: #eaeaea;
+    font-size: 2.2rem;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?          CONTACT FORMS          ? */
+
+  .contact--form {
+    padding: 140px 25px 0 25px;
+  }
+
+  .contact--form::after {
+    background-position: -400px -400px;
+  }
+
+  .field-submit {
+    height: 50px;
+    color: #fff;
+    background-color: #333;
+  }
+
+  /* ? =============================== ? */
+}
+
+/* ! ======================= ! */
+/* ! media querie : LAPTOP 2 ! */
+/* ! ======================= ! */
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+  /* ¡ ========= BASIC ========= ! */
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--body-title);
+  }
+
+  .text {
+    color: var(--body-text);
+    line-height: 25px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  /* ¡ ========================= ! */
+
+  /* ? WE DELIVER CREATIVE AND QUALITY ? */
+
+  .creative-and-quality {
+    height: 420px;
+    margin-bottom: 80px;
+    padding-top: 13vmax;
+    color: #fff;
+    background-color: #3c3636;
+  }
+
+  .title-container {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .title-container::after {
+    top: -100px;
+  }
+
+  .title-container::before {
+    bottom: -100px;
+  }
+
+  .single-text {
+    height: 140px;
+    margin-top: 18.5vmin;
+    color: #333;
+    font-size: 2.8rem;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?            FEATURES             ? */
+
+  .chrts {
+    height: 800px;
+    padding: 180px 10px 0 10px;
+    grid-template-columns: repeat(2, minmax(300px, 450px));
+    grid-template-rows: repeat(2, 250px);
+    justify-content: center;
+    grid-gap: 15px;
+  }
+
+  .chrts-subtitle {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?             IDEAS               ? */
+
+  .ideas {
+    width: 93%;
+    margin: 0 auto 100px auto;
+  }
+
+  .ideas-subtitle {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .we-have-ideas {
+    width: 70%;
+    margin-bottom: 180px;
+  }
+
+  .ideas-links {
+    display: flex;
+    max-width: 280px;
+  }
+
+  .we-can-make {
+    width: 70%;
+    margin: 0 0 20px 28vmax;
+  }
+
+  .we-can-make p {
+    margin-bottom: 20px;
+  }
+
+  .ideas-list {
+    width: 95%;
+    margin-left: 20px;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?        CONTACT DETAILS          ? */
+
+  .contact {
+    height: 700px;
+    padding: 16vh 5vmin;
+    color: #fff;
+    background-color: #3b363c;
+  }
+
+  .contact-subtitle {
+    color: #fff;
+  }
+
+  .contact-text {
+    color: #fff;
+  }
+
+  .contact-list li {
+    font-size: 1.2rem;
+  }
+
+  .icon-div {
+    margin-left: 15px;
+    grid-template-columns: 90px 1fr;
+    gap: 20px;
+  }
+
+  .contact-icon {
+    color: #eaeaea;
+    font-size: 2.2rem;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?          CONTACT FORMS          ? */
+
+  .contact--form {
+    padding: 140px 40px 0 40px;
+  }
+
+  .contact--form::after {
+    background-position: -400px -400px;
+  }
+
+  .field-submit {
+    height: 50px;
+    color: #fff;
+    background-color: #333;
+  }
+
+  /* ? =============================== ? */
+}
+
+/* ! ===================== ! */
+/* ! media querie :   PC   ! */
+/* ! ===================== ! */
+
+@media (min-width: 1291px) and (max-width: 1440px) {
+  /* ¡ ========= BASIC ========= ! */
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: var(--body-title);
+  }
+
+  .text {
+    color: var(--body-text);
+    line-height: 25px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  /* ¡ ========================= ! */
+
+  /* ? WE DELIVER CREATIVE AND QUALITY ? */
+
+  .creative-and-quality {
+    width: 100%;
+    height: 100vh;
+    padding-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+    background-color: #3c3636;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .creative-and-quality::before {
+    width: 50%;
+    height: 100%;
+  }
+
+  .title-container {
+    width: 42%;
+    margin: 0 0;
+    padding-top: 41vh;
+  }
+
+  .principal-title {
+    width: 75%;
+    font-weight: 600;
+    font-size: 2.3rem;
+    line-height: 45px;
+  }
+
+  .title-container::after {
+    top: 250px;
+    left: 5%;
+  }
+
+  .title-container::before {
+    right: 5%;
+    bottom: 250px;
+  }
+
+  .single-text {
+    width: 58%;
+    height: 100vh;
+    margin-top: 0;
+    color: #333;
+    font-size: 4rem;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?            FEATURES             ? */
+
+  .chrts {
+    height: 650px;
+    padding: 175px 10px 0 10px;
+    grid-template-columns: repeat(2, minmax(300px, 450px));
+    grid-template-rows: repeat(2, 110px);
+    justify-content: center;
+    gap: 85px;
+  }
+
+  .chrts-div {
+    display: grid;
+    grid-template-columns: 90px auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "image title"
+      "image desc";
+    gap: 0 15px;
+  }
+
+  .chrts-subtitle {
+    margin-bottom: 10px;
+    font-weight: 500;
+    grid-area: title;
+  }
+
+  .image-icon {
+    width: 75px;
+    margin-bottom: 5px;
+    grid-area: image;
+    justify-self: center;
+  }
+
+  .chrts-text {
+    grid-area: desc;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?             IDEAS               ? */
+
+  .ideas {
+    width: 60%;
+    margin: 0 auto 100px auto;
+    outline: 2px solid rgba(255, 0, 0, 0.2);
+  }
+
+  .ideas-subtitle {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+
+  .we-have-ideas {
+    width: 75%;
+    outline: 2px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .ideas-links {
+    display: flex;
+    max-width: 280px;
+  }
+
+  .we-can-make {
+    width: 75%;
+    margin-left: 15vmax;
+    outline: 2px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .ideas-list {
+    width: 95%;
+    margin-left: 25px;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?        CONTACT DETAILS          ? */
+
+  .contact-div {
+    display: flex;
+  }
+
+  .contact {
+    width: 42%;
+    height: 760px;
+    padding: 23vmin 5vmin;
+    color: #fff;
+    background-color: #3b363c;
+  }
+
+  .contact-subtitle {
+    color: #fff;
+  }
+
+  .contact-text {
+    color: #fff;
+  }
+
+  .contact-list li {
+    list-style: none;
+    font-size: 1.1rem;
+  }
+
+  .icon-div {
+    grid-template-columns: 80px 1fr;
+    margin-left: 15px;
+  }
+
+  .contact-icon {
+    color: #eaeaea;
+    font-size: 1.5rem;
+  }
+
+  /* ? =============================== ? */
+
+  /* ?          CONTACT FORMS          ? */
+
+  .contact--form {
+    width: 58%;
+    height: 760px;
+    padding: 190px 140px 0 140px;
+    margin: 0 auto;
+  }
+
+  .contact--form::after {
+    background-position: -500px -350px;
   }
 
   /* ? =============================== ? */
