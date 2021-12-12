@@ -3,7 +3,7 @@
   padding: 0;
   resize: none;
   border: none;
-  list-style: square;
+  list-style: none;
   text-decoration: none;
   box-sizing: border-box;
 }
@@ -41,6 +41,76 @@ body {
 }
 
 /* ¡ ========================= ! */
+
+/* ? HEADER ? */
+
+.header__nav{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3b363c;
+}
+
+/* .header__nav-scroll{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 65px;
+  padding: 0 35px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--body-title);
+} */
+
+.header__nav-menu{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  margin-top: 50px;
+  padding: 15px 0 0 15px;
+  background-color: #3b363c;
+  display:flex;
+  flex-direction: column;
+}
+
+.header__brand{
+  width: 170px;
+  padding: 15px 0 0 20px;
+}
+
+.header__nav-link{
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 40px;
+  transition: color .3s;
+}
+
+
+.header__nav-link:link{
+  color: #c4c2c2;
+}
+
+.header__nav-link:visited{
+  color: #c4c2c2;
+}
+
+.header__nav-link:hover{
+  color: #fff;
+}
+
+.header__btn-toggle{
+  padding: 14px 20px 0 0; 
+  display: flex;
+  font-size: 1.8rem;
+  color: #c4c2c2;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 
 /* ? WE DELIVER CREATIVE AND QUALITY ? */
 
