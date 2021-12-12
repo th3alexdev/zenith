@@ -13,14 +13,14 @@
 <body>
     <div class="container">
         <header class="header">
-            <nav class="header__nav">
+            <nav id="header-nav" class="header__nav">
                 <a href="#"><img src="assets/images/logo.svg" alt="Zenith Logo" class="header__brand"></a>
                 <button id="btn-toggle" class="header__btn-toggle"><i class="fas fa-bars"></i></button>
-                <!-- <ul id="nav-menu" class="header__nav-menu">
-                    <li><a href="#" class="header__nav-link">Services</a></li>
-                    <li><a href="#" class="header__nav-link">Details</a></li>
-                    <li><a href="#" class="header__nav-link">Contact</a></li>
-                </ul> -->
+                <ul id="nav-menu" class="header__nav-menu">
+                    <li class="header__nav-item"><a href="#services" class="header__nav-link">Services</a></li>
+                    <li class="header__nav-item"><a href="#details" class="header__nav-link">Details</a></li>
+                    <li class="header__nav-item"><a href="#contact" class="header__nav-link">Contact</a></li>
+                </ul>
             </nav>
         </header>
         <main class="main">
@@ -29,7 +29,7 @@
                 </div>
                 <p class="single-text"></p>
             </div>
-            <div class="chrts">
+            <div id="services" class="chrts">
                 <div class="branding chrts-div">
                     <img src="assets/images/service-icon-1.svg" class="image-icon" alt="branding">
                     <h2 class="chrts-subtitle subtitle">Branding</h2>
@@ -51,7 +51,7 @@
                     <p class="chrts-text text">We love design and coding. Don't hesitate to get in touch if you need an app</p>
                 </div>            
             </div>
-            <div class="ideas">
+            <div id="details" class="ideas">
                 <div class="we-have-ideas">
                     <h2 class="ideas-subtitle subtitle">We have the ideas</h2>
                     <p class="ideas-text text">We love to connect and manage complex business solutions systems for small and medium sized companies globally. Partnerships represent a key pillar of our development strategy. We invest important resources to preserve them for the management long run because we truly believe in win-win collaborations.
@@ -73,53 +73,51 @@
                     </ul>
                 </div>
             </div>
-
-            <div class="contact-div">
-            <div class="contact" id="contact">
-                <div class="contact-details">
-                    <h3 class="contact-subtitle subtitle">Contact Details</h3>
-                    <p class="contact-text text">For field sales workers there's nothing more important than a reliable interface to the company's knowledge base app. Don't hesitate to get in touch with our sales team.</p>
-                        <div class="icon-div location">
-                            <i class="fas fa-map-marker-alt contact-icon icon"></i>
-                            <ul class="contact-list">
-                                <li>Ender's Street nr 55</li>
-                                <li>4th Floor</li>
-                                <li>New Hampton</li>
-                            </ul>
-                        </div>
-                        <div class="icon-div phone">
-                            <i class="fas fa-mobile contact-icon icon"></i>
-                            <ul class="contact-list">
-                                <li><span class="span-bold">Mobile:</span> 067-554-6776</li>
-                                <li><span class="span-bold">Office:</span> 047-554-4774</li>
-                            </ul>
-                        </div>
-                        <div class="icon-div email">
-                            <i class="far fa-envelope contact-icon icon"></i>
-                            <ul class="contact-list">
-                                <li><span class="span-bold">Email:</span> contact@zenith.com</li>
-                                <li><span class="span-bold">Support:</span> support@zenith.com</li>
-                            </ul>
-                        </div>
+            <div id="contact" class="contact-div">
+                <div class="contact">
+                    <div class="contact-details">
+                        <h3 class="contact-subtitle subtitle">Contact Details</h3>
+                        <p class="contact-text text">For field sales workers there's nothing more important than a reliable interface to the company's knowledge base app. Don't hesitate to get in touch with our sales team.</p>
+                            <div class="icon-div location">
+                                <i class="fas fa-map-marker-alt contact-icon icon"></i>
+                                <ul class="contact-list">
+                                    <li>Ender's Street nr 55</li>
+                                    <li>4th Floor</li>
+                                    <li>New Hampton</li>
+                                </ul>
+                            </div>
+                            <div class="icon-div phone">
+                                <i class="fas fa-mobile contact-icon icon"></i>
+                                <ul class="contact-list">
+                                    <li><span class="span-bold">Mobile:</span> 067-554-6776</li>
+                                    <li><span class="span-bold">Office:</span> 047-554-4774</li>
+                                </ul>
+                            </div>
+                            <div class="icon-div email">
+                                <i class="far fa-envelope contact-icon icon"></i>
+                                <ul class="contact-list">
+                                    <li><span class="span-bold">Email:</span> contact@zenith.com</li>
+                                    <li><span class="span-bold">Support:</span> support@zenith.com</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+                <div class="contact--form">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" class="field field-input" required  autocomplete="off">
+                        <label for="name" class="field-label name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" class="field field-input" required autocomplete="off">
+                        <label for="email" class="field-label email">Email</label>
+                    </div>
+                    <div class="form-group">               
+                        <textarea name="message" id="message" cols="30" rows="10"  class="field field-textarea" required></textarea>
+                        <label for="message" class="field-label message">Your message</label>
+                    </div>
+                        <input type="submit" value="SUBMIT" class="field field-submit">
                 </div>
             </div>
-            <div class="contact--form">
-                <div class="form-group">
-                    <input type="text" name="name" id="name" class="field field-input" required  autocomplete="off">
-                    <label for="name" class="field-label name">Name</label>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" id="email" class="field field-input" required autocomplete="off">
-                    <label for="email" class="field-label email">Email</label>
-                </div>
-                <div class="form-group">               
-                    <textarea name="message" id="message" cols="30" rows="10"  class="field field-textarea" required></textarea>
-                    <label for="message" class="field-label message">Your message</label>
-                </div>
-                    <input type="submit" value="SUBMIT" class="field field-submit">
-            </div>
-            </div>
-
         </main>
         <footer class="footer">
             <div class="footer-info">
