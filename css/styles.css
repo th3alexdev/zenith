@@ -3,7 +3,6 @@
   padding: 0;
   resize: none;
   border: none;
-  list-style: none;
   text-decoration: none;
   box-sizing: border-box;
 }
@@ -15,6 +14,7 @@ body {
 }
 
 :root {
+  scroll-behavior: smooth;
   --body-text: #6b747b;
   --body-title: #333;
 }
@@ -54,31 +54,33 @@ body {
   background-color: #3b363c;
 }
 
-/* .header__nav-scroll{
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-  height: 65px;
-  padding: 0 35px;
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--body-title);
-} */
 
 .header__nav-menu{
   position: fixed;
+  top: 50px; 
   width: 100%;
   height: 100vh;
-  margin-top: 50px;
   padding: 15px 0 0 15px;
   background-color: #3b363c;
-  display:flex;
+  overflow-y: auto;
+  left: 100%;
+  transition: left .3s;
+  display: flex;
   flex-direction: column;
+}
+
+.nav-menu_visible{
+  left: 0;
 }
 
 .header__brand{
   width: 170px;
-  padding: 15px 0 0 20px;
+  padding: 13px 0 0 20px;
+}
+
+.header__nav-item{
+  width: max-content;
+  list-style-type: none;
 }
 
 .header__nav-link{
@@ -88,7 +90,6 @@ body {
   line-height: 40px;
   transition: color .3s;
 }
-
 
 .header__nav-link:link{
   color: #c4c2c2;
@@ -103,7 +104,7 @@ body {
 }
 
 .header__btn-toggle{
-  padding: 14px 20px 0 0; 
+  padding: 12px 20px 0 0; 
   display: flex;
   font-size: 1.8rem;
   color: #c4c2c2;
@@ -283,7 +284,7 @@ body {
   width: 100%;
   height: 1300px;
   padding: 100px 10px 0 10px;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 80px auto;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
   grid-gap: 45px;
@@ -320,6 +321,7 @@ body {
 
 .ideas {
   width: 93%;
+  height: 1200px;
   margin: 0 auto 100px auto;
 }
 
@@ -329,6 +331,7 @@ body {
 }
 
 .we-have-ideas {
+  padding-top: 80px;
   margin-bottom: 180px;
 }
 
@@ -394,6 +397,7 @@ body {
 .ideas-list {
   width: 85%;
   margin: 0 auto;
+  list-style-type: square;
 }
 
 /* ? =============================== ? */
@@ -1060,11 +1064,76 @@ body {
 
   /* ¡ ========================= ! */
 
+  /* ? HEADER ? */
+
+  
+  .container .hdr-secondary{
+    height: 60px;
+    padding-top: 20px;
+    background-color: var(--body-title);
+    transition: padding .3s, height .2s; 
+  }
+
+  .header__nav{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 75px;
+    padding: 25px 35px;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    transition: padding .3s, height .2s; 
+  }
+
+  .header__nav-menu{
+    position: relative;
+    top: 0; 
+    left:0;
+    width: max-content;
+    height: max-content;
+    padding: 0;
+    background-color: transparent;
+    overflow-y: none;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .header__brand{
+    width: 130px;
+    padding: 0;
+  }
+
+  .header__nav-link{
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 5px;
+  }
+    
+  .header__btn-toggle{
+    display: none;
+  }
+
+
+  .header__nav-link:link{
+    color: var(--body-text);
+  }
+
+  .header__nav-link:visited{
+    color: var(--body-text);
+  }
+
+  .header__nav-link:hover{ 
+    color: #3b363c;/* Arreglar ttiene que ser color gris claro */
+  }
+
+  /* ? ====== ? */
+
   /* ? WE DELIVER CREATIVE AND QUALITY ? */
 
   .creative-and-quality {
     width: 100%;
-    height: 100vh;
+    height: 900px;
     padding-top: 0;
     margin-bottom: 0;
     color: #fff;
@@ -1082,7 +1151,7 @@ body {
   .title-container {
     width: 42%;
     margin: 0 0;
-    padding-top: 41vh;
+    padding-top: 35vh;
   }
 
   .principal-title {
@@ -1092,18 +1161,18 @@ body {
   }
 
   .title-container::after {
-    top: 250px;
+    top: 300px;
     left: 5%;
   }
 
   .title-container::before {
     right: 5%;
-    bottom: 250px;
+    bottom: 310px;
   }
 
   .single-text {
     width: 58%;
-    height: 100vh;
+    height: 100%;
     margin-top: 0;
     color: #333;
     font-size: 4rem;
@@ -1257,10 +1326,75 @@ body {
 
   /* ¡ ========================= ! */
 
+/* ? HEADER ? */
+
+  .container .hdr-secondary{
+    height: 60px;
+    padding-top: 20px;
+    background-color: var(--body-title);
+    transition: padding .3s, height .2s; 
+  }
+
+  .header__nav{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 75px;
+    padding: 25px 35px;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    transition: padding .3s, height .2s; 
+  }
+
+  .header__nav-menu{
+    position: relative;
+    top: 0; 
+    left:0;
+    width: max-content;
+    height: max-content;
+    padding: 0;
+    background-color: transparent;
+    overflow-y: none;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .header__brand{
+    width: 130px;
+    padding: 0;
+  }
+
+  .header__nav-link{
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 5px;
+  }
+    
+  .header__btn-toggle{
+    display: none;
+  }
+
+
+  .header__nav-link:link{
+    color: var(--body-text);
+  }
+
+  .header__nav-link:visited{
+    color: var(--body-text);
+  }
+
+  .header__nav-link:hover{ 
+    color: #3b363c;/* Arreglar ttiene que ser color gris claro */
+  }
+
+/* ? ====== ? */
+
   /* ? WE DELIVER CREATIVE AND QUALITY ? */
 
   .creative-and-quality {
     height: 100vh;
+    max-height: 969px;
     padding-top: 0;
     margin-bottom: 0;
     color: #fff;
@@ -1268,17 +1402,18 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .creative-and-quality::before {
     width: 50%;
     height: 100%;
+    max-height: 969px;
   }
 
   .title-container {
     width: 42%;
     margin: 0 0;
-    padding-top: 41vh;
   }
 
   .principal-title {
@@ -1289,18 +1424,19 @@ body {
   }
 
   .title-container::after {
-    top: 250px;
+    top: -85px;
     left: 5%;
   }
 
   .title-container::before {
     right: 5%;
-    bottom: 250px;
+    bottom: -85px;
   }
 
   .single-text {
     width: 58%;
     height: 100vh;
+    max-height: 969px;
     margin-top: 0;
     color: #333;
     font-size: 4rem;
