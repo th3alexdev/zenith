@@ -582,7 +582,7 @@ body {
 
 .footer {
   display: flex;
-  height: 105px;
+  height: 75px;
   background-color: var(--light-gray);
   flex-direction: column;
   flex-wrap: nowrap;
@@ -598,32 +598,23 @@ body {
   display: flex;
   width: auto;
   margin-right: 5px;
-  font-size: 0.9rem;
-  color: #7a848d;
+  font-size: 0.8rem;
+  color: var(--main-color-txt);
+  gap: 5px;
 }
 
 .footer-link {
-  margin-left: 3px;
-}
-
-.footer-link--icon {
-  margin: 0 5px 0 0;
-}
-
-.icon-footer {
-  font-size: 1rem;
+  font-weight: 700;
 }
 
 .footer-link:visited,
 .footer-link:link {
-  font-weight: 500;
-  color: #7a848d;
+  color: var(--main-color-txt)
 }
 
 .footer-link--icon:visited,
 .footer-link--icon:link {
-  font-weight: 500;
-  color: #7a848d;
+  color: var(--main-color-txt)
 }
 
 /* ! ===================== ! */
