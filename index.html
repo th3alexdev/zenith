@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-        <header class="header">
+        <header id="header" class="header header-principal">
             <nav id="header-nav" class="header__nav">
                 <a href="#"><img src="assets/images/logo.svg" alt="Zenith Logo" class="header__brand"></a>
                 <button id="btn-toggle" class="header__btn-toggle"><i class="fas fa-bars"></i></button>
@@ -24,6 +24,7 @@
             </nav>
         </header>
         <main class="main">
+            <a href="#header" id="go-btn" class="go-down-arrow arrow"><i id="i-arrow" class="fas fa-chevron-down"></i></a>
             <div class="creative-and-quality">
                 <div class="title-container"><h1 class="title principal-title">We deliver creative and quality solutions for your web presence</h1>
                 </div>
@@ -59,7 +60,7 @@
                     <p class="ideas-text text">Our team is our core strength. We rely on each other's skills and experience to delivery huge value and impressive results to our most loyal customers.</p> 
                     
                     <div class="ideas-links">
-                        <a href="#" class="btn-link left">Details</a>
+                        <a href="#details" class="btn-link left">Details</a>
                         <a href="#contact" class="btn-link right">Contact</a>
                     </div>
                 </div>
@@ -102,34 +103,32 @@
                             </div>
                     </div>
                 </div>
-                <div class="contact--form">
+                <form class="contact--form">
                     <div class="form-group">
-                        <input type="text" name="name" id="name" class="field field-input" required  autocomplete="off">
+                        <input type="text" name="name" id="name" class="field field-input" required autocomplete="off" placeholder=" ">
                         <label for="name" class="field-label name">Name</label>
+                        <span class="form__line"></span>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" id="email" class="field field-input" required autocomplete="off">
+                        <input type="email" name="email" id="email" class="field field-input" required autocomplete="off" placeholder=" ">
                         <label for="email" class="field-label email">Email</label>
+                        <span class="form__line"></span>
                     </div>
                     <div class="form-group">               
-                        <textarea name="message" id="message" cols="30" rows="10"  class="field field-textarea" required></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10"  class="field field-textarea" required placeholder=" "></textarea>
                         <label for="message" class="field-label message">Your message</label>
+                        <span class="form__line"></span>
                     </div>
                         <input type="submit" value="SUBMIT" class="field field-submit">
-                </div>
+                </form>
             </div>
         </main>
         <footer class="footer">
             <div class="footer-info">
-                <p class="footer-text">Created by<a href="https://github.com/IamAleKs-0010" class="footer-link" target="_blank">IamAleKs-0010</a></p>
-                <a href="https://github.com/IamAleKs-0010" class="footer-link--icon" target="_blank"><i class="fab fa-github icon-footer icon"></i></a>
-            </div>
-            <div class="footer-info">
-                <p class="footer-text">Taken from <a href="https://inovatik.com" class="footer-link" target="_blank">Inovatik</a></p>
-                <a href="https://inovatik.com/" class="footer-link--icon" target="_blank"><i class="fas fa-globe-americas"></i></a>
-                <a href="https://twitter.com/Inovatik" class="footer-link--icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                <p class="footer-text">Created by<a href="https://github.com/IamAleKs-0010" class="footer-link" target="_blank">AleKs</a>
+                <p class="footer-text">- Taken from <a href="https://inovatik.com" class="footer-link" target="_blank">Inovatik</a></p></p> 
             </div>
         </footer>
-    </>
+    </div>
 </body>
 </html>
