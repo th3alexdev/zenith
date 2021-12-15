@@ -1,7 +1,7 @@
 
     const button = document.getElementById('btn-toggle')
     const navMenu = document.getElementById('nav-menu')
-    const links = [...document.querySelectorAll('.header__nav-link')]
+    const links = document.querySelectorAll('.header__nav-link')
     const header = document.getElementById('header')
 
     /* Funcionalidades del NavBar */
@@ -27,7 +27,7 @@
             
             iconArrow.classList.remove('fa-chevron-down')
             iconArrow.classList.add('fa-chevron-up')
-            goButton.hash = '#header';
+            goButton.hash = '#principal';
         }
         else {
             goButton.classList.remove('go-up-arrow')
@@ -71,3 +71,35 @@
         header.classList.add('header-secondary')
         console.log('mayor a 2400')
     } 
+    /* =================== */
+
+
+
+
+    /* Preguntamos cuánto scroll ha hecho el usuario para marcar los links en el header */ 
+    const sections = document.querySelectorAll('.section-ob')
+    const observer = new IntersectionObserver( (entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                const id = '#' + entry.target.id;
+                history.pushState({}, entry.target.innetText, id)
+
+                links.forEach(link => {
+                    link.classList.remove('nav-link__focused')
+                    const href = link.attributes.href.nodeValue;
+                    // console.log(href)
+
+                    if(href === id){
+                        link.classList.add('nav-link__focused')
+                    } 
+                })
+            }
+        })
+    }, {
+        threshold: .3,
+        rootMargin: '0px 0px -50% 0px'
+    });
+
+    sections.forEach(section => {
+        observer.observe(section)
+    })
