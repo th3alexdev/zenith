@@ -57,7 +57,6 @@ body {
   z-index: 100;
   width: 100%;
   height: 50px;
-  padding: 1px 0;
   display: flex;
   justify-content: space-between;
   background-color: var(--secondary-color);
@@ -126,10 +125,14 @@ body {
   position: relative;
   width: 100%;
   height: 50vmax;
-  padding-top: 15vmax;
   margin-bottom: 15%;
+  padding-top: 50px;
   color: #fff;
   background-color: var(--main-color);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 346px 120px;
+  align-items: center;
 }
 
 .creative-and-quality::before {
@@ -146,10 +149,13 @@ body {
   mix-blend-mode: color-burn;
 }
 
+
 .title-container {
   position: relative;
   width: 98%;
   margin: 0 auto;
+  display: flex;
+  align-content: center;
 }
 
 .principal-title {
@@ -167,8 +173,8 @@ body {
   z-index: 10;
   content: "";
   display: block;
-  top: -60px;
-  left: 8px;
+  top: -55px;
+  left: 5px;
   width: 50px;
   height: 50px;
   border-width: 25px 25px 0 0;
@@ -188,8 +194,8 @@ body {
   z-index: 0;
   content: "";
   display: block;
-  right: 8px;
-  bottom: -60px;
+  right: 5px;
+  bottom: -55px;
   width: 50px;
   height: 50px;
   border-width: 25px 25px 0 0;
@@ -210,7 +216,6 @@ body {
   display: flex;
   width: 100%;
   height: 120px;
-  margin-top: calc(14vmax + 1.5%);
   color: #333;
   font-size: 1.8rem;
   font-weight: 500;
@@ -328,8 +333,9 @@ body {
 
 .ideas {
   width: 93%;
-  height: 1200px;
+  height: max-content;
   margin: 0 auto 100px auto;
+  padding: 80px 0;
 }
 
 .ideas-subtitle {
@@ -338,7 +344,6 @@ body {
 }
 
 .we-have-ideas {
-  padding-top: 80px;
   margin-bottom: 180px;
 }
 
@@ -416,9 +421,11 @@ body {
   width: 100%;
   height: 800px;
   margin-bottom: 0;
-  padding: 50vmin 5vmin;
+  padding: 0 5vmin;
   color: #fff;
   background-color: var(--main-color);
+  display: flex;
+  align-items: center;
 }
 
 .contact::before {
@@ -656,8 +663,8 @@ body {
   /* ?             IDEAS               ? */
 
   .ideas {
-    width: 100%;
-    padding: 0 50px;
+    width: 93%;
+    padding: 80px 0;
   }
 
   .ideas-subtitle {
@@ -844,9 +851,11 @@ body {
 
   .contact {
     height: 700px;
-    padding: 16vh 5vmin;
+    padding: 0 5vmin;
     color: #fff;
     background-color: var(--main-color);
+    display: flex;
+    align-items: center;
   }
 
   .contact-subtitle {
@@ -930,11 +939,10 @@ body {
   /* ¡ ========================= ! */
 
   /* ? WE DELIVER CREATIVE AND QUALITY ? */
-
+ 
   .creative-and-quality {
-    height: 420px;
+    height: 40vmax;
     margin-bottom: 80px;
-    padding-top: 13vmax;
     color: #fff;
   }
 
@@ -953,8 +961,7 @@ body {
   }
 
   .single-text {
-    height: 140px;
-    margin-top: 18.5vmin;
+    height: 120px;
     color: #333;
     font-size: 2.8rem;
   }
@@ -1168,7 +1175,7 @@ body {
     color: var(--body-text);
   }
 
-  .header__nav-link:hover{ 
+  .header__nav-link:hover, .header__nav-item > .nav-link__focused{ 
     color: var(--light-gray);
     text-shadow: 1px 1px 0 #333;
   }
@@ -1186,6 +1193,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .creative-and-quality::before {
@@ -1196,7 +1204,8 @@ body {
   .title-container {
     width: 42%;
     margin: 0 0;
-    padding-top: 35vh;
+    display: flex;
+    align-items: center;
   }
 
   .principal-title {
@@ -1206,13 +1215,13 @@ body {
   }
 
   .title-container::after {
-    top: 300px;
+    top: -85px;
     left: 5%;
   }
 
   .title-container::before {
     right: 5%;
-    bottom: 310px;
+    bottom: -85px;
   }
 
   .single-text {
@@ -1314,9 +1323,11 @@ body {
   .contact {
     width: 42%;
     height: 760px;
-    padding: 16vmin 5vmin;
+    padding: 0 5vmin;
     color: #fff;
     background-color: var(--main-color);
+    display: flex;
+    align-items: center;
   }
 
   .contact-subtitle {
@@ -1512,7 +1523,7 @@ body {
     color: var(--body-text);
   }
 
-  .header__nav-link:hover{ 
+  .header__nav-link:hover, .header__nav-item > .nav-link__focused{ 
     color: var(--light-gray);
     text-shadow: 1px 1px 0 #333;
   }
