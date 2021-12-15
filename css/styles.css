@@ -605,14 +605,14 @@ body {
 .footer-text {
   display: flex;
   width: auto;
-  margin-right: 5px;
   font-size: 0.8rem;
   color: var(--main-color-txt);
-  gap: 5px;
 }
 
 .footer-link {
+  display: inline-block;
   font-weight: 700;
+  margin: 0 5px;
 }
 
 .footer-link:visited,
